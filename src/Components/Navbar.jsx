@@ -6,7 +6,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Link as ReachLink } from "react-scroll";
 import resume from "../assets/Abhishek_Yadav_resume.pdf";
-import logo from "../assets/ay-logo.jpg"
+import logo from "../assets/ay-logo.jpg";
 const navItem = [
   { path: "home", name: "Home" },
   { path: "about", name: "About" },
@@ -17,9 +17,8 @@ const navItem = [
 
 // const secondryColor = "#2442d7";
 
-export const Navbar = () => {
+ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <>
       <chakra.header
@@ -30,18 +29,13 @@ export const Navbar = () => {
         pos={"sticky"}
         top="0"
         zIndex={10}
-        bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
+        bgGradient="radial-gradient(circle at 27.1% 51.8%, #0c3542 0.5%, #28324c 94.4%);"
         // bg="black"
         color="white"
       >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Abhishek Yadav" display="flex" alignItems="center">
-            <Avatar
-              size="sm"
-              name="Abhishek Yadav"
-              src={logo}
-              _hover={{ transform: "rotate(90deg)" }}
-            />
+            <Avatar size="sm" name="Abhishek Yadav" src={logo} _hover={{ transform: "rotate(90deg)" }} />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }} gap="6">
             {navItem.map((item, i) => {
@@ -53,8 +47,6 @@ export const Navbar = () => {
                   to={item.path}
                   spy={true}
                   smooth={true}
-
-
                   offset={item.path === "skills" ? -180 : -60}
                   duration={700}
                   fontSize="18"
@@ -72,7 +64,7 @@ export const Navbar = () => {
             download="Abhishek_Yadav_Resume"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+            <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger" _hover={{backgroundColor:"#28324c", color:"#dcd0ce"}}>
               Download Resume
             </Button>
           </Link>
@@ -93,7 +85,7 @@ export const Navbar = () => {
               pb="6"
               rounded="sm"
               shadow="sm"
-              bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
+              bgGradient="radial-gradient(circle at 27.1% 51.8%, #0c3542 0.5%, #28324c 94.4%);"
               // bg="black"
               color="white"
             >
@@ -129,3 +121,5 @@ export const Navbar = () => {
     </>
   );
 };
+
+export default Navbar
