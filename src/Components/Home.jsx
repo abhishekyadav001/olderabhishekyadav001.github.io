@@ -1,7 +1,7 @@
 import { Avatar, Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import profilePic from "../assets/profile-pic (3).png";
+import profilePic from "../assets/profile pic.jpg";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       color="white"
       id="home"
     >
-      <Avatar width="300px" height="300px" name="Abhishek Yadav" src={profilePic}  />
+      <Avatar width="300px" height="300px" name="Abhishek Yadav" src={profilePic} />
       <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }}>
         <Heading>Hi👋,</Heading>
         <Heading>I am Abhishek Yadav</Heading>

@@ -1,5 +1,7 @@
-import { Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, Link, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { AiOutlineDownload } from "react-icons/ai";
+import resume from "../assets/Abhishek_Yadav_Resume.pdf";
 
 const About = () => {
   return (
@@ -15,6 +17,11 @@ const About = () => {
       id="about"
     >
       <Heading>About me</Heading>
+      <Link target="_blank" href={resume} download="Abhishek_Yadav_Resume" _hover={{ textDecoration: "none" }}>
+        <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+          Download Resume
+        </Button>
+      </Link>
       <Flex flexDir={{ base: "column", md: "row" }} justifyContent={"center"} alignItems={"center"}>
         <Image
           w={{ base: "50%", md: "40%" }}

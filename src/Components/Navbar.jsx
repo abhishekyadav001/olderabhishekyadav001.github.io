@@ -5,11 +5,11 @@ import { chakra, Box, Flex, HStack, Button, useDisclosure, VStack, IconButton, A
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Link as ReachLink } from "react-scroll";
-import resume from "../assets/Abhishek_Yadav_resume.pdf";
+import resume from "../assets/Abhishek_Yadav_Resume.pdf";
 import logo from "../assets/ay-logo.jpg";
 const navItem = [
   { path: "home", name: "Home" },
-  { path: "about", name: "About" },
+  { path: "about", name: "AboutMe" },
   { path: "skills", name: "Skills" },
   { path: "projects", name: "Projects" },
   { path: "contact", name: "Contact" },
@@ -17,7 +17,7 @@ const navItem = [
 
 // const secondryColor = "#2442d7";
 
- const Navbar = () => {
+const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -64,7 +64,12 @@ const navItem = [
             download="Abhishek_Yadav_Resume"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger" _hover={{backgroundColor:"#28324c", color:"#dcd0ce"}}>
+            <Button
+              variant="solid"
+              leftIcon={<AiOutlineDownload />}
+              colorScheme="messenger"
+              _hover={{ backgroundColor: "#28324c", color: "#dcd0ce" }}
+            >
               Download Resume
             </Button>
           </Link>
@@ -122,4 +127,4 @@ const navItem = [
   );
 };
 
-export default Navbar
+export default Navbar;

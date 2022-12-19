@@ -10,9 +10,11 @@ import {
   InputLeftElement,
   Link,
   Stack,
+  Text,
   Textarea,
   VStack,
 } from "@chakra-ui/react";
+import { Tooltip } from "@chakra-ui/react";
 import React from "react";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -25,21 +27,31 @@ const Contact = () => {
       <Heading>Let's get in touch</Heading>
       <Stack direction={{ base: "column", md: "row" }} justifyContent="space-evenly" alignItems={"center"} w={"100%"}>
         <HStack gap={{ base: "5", md: "10" }} my="4">
-          <Link href="mailto:yadavabhishek2723@gmail.com">
-            <Icon as={MdMarkEmailUnread} w={"8"} h={"8"} color="telegram.800" />
-          </Link>
-          <Link href="tel:+917083626134">
-            <Icon as={BsFillTelephoneInboundFill} w={"8"} h={"8"} color="telegram.800" />
-          </Link>
-          <Link href="https://twitter.com/abhishekyadav68" target="_blank">
-            <Icon as={BsTwitter} w={"8"} h={"8"} color="telegram.800" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/" target="_blank">
-            <Icon as={BsLinkedin} w={"8"} h={"8"} color="telegram.800" />
-          </Link>
-          <Link href="https://github.com/abhishekyadav001" target="_blank">
-            <Icon as={BsGithub} w={"8"} h={"8"} color="telegram.800" />
-          </Link>
+          <Tooltip hasArrow label="yadavabhishek2723@gmail.com" bg="#005885" aria-label="GmailId">
+            <Link href="mailto:yadavabhishek2723@gmail.com">
+              <Icon as={MdMarkEmailUnread} w={"8"} h={"8"} color="telegram.800" />
+            </Link>
+          </Tooltip>
+          <Tooltip hasArrow label="+917083626134" bg="#005885" aria-label="Phone Numbers">
+            <Link href="tel:+917083626134">
+              <Icon as={BsFillTelephoneInboundFill} w={"8"} h={"8"} color="telegram.800" />
+            </Link>
+          </Tooltip>
+          <Tooltip hasArrow label="abhishekyadav68" bg="#005885" aria-label="Phone Numbers">
+            <Link href="https://twitter.com/abhishekyadav68" target="_blank">
+              <Icon as={BsTwitter} w={"8"} h={"8"} color="telegram.800" />
+            </Link>
+          </Tooltip>
+          <Tooltip hasArrow label="Abhishek Yadav" bg="#005885" aria-label="Phone Numbers">
+            <Link href="https://www.linkedin.com/in/" target="_blank">
+              <Icon as={BsLinkedin} w={"8"} h={"8"} color="telegram.800" />
+            </Link>
+          </Tooltip>
+          <Tooltip hasArrow label="abhishekyadav001" bg="#005885" aria-label="Phone Numbers">
+            <Link href="https://github.com/abhishekyadav001" target="_blank">
+              <Icon as={BsGithub} w={"8"} h={"8"} color="telegram.800" />
+            </Link>
+          </Tooltip>
         </HStack>
         <Box rounded={"lg"} boxShadow={"lg"} p={6} maxWidth="450px" width={"100%"}>
           <form action="https://formsubmit.co/a46a1cceff413118facedecaed5e9466" method="POST">
