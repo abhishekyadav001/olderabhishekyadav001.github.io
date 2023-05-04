@@ -30,8 +30,8 @@ const Navbar = () => {
         top="0"
         zIndex={10}
         bgGradient="radial-gradient(circle at 27.1% 51.8%, #0c3542 0.5%, #28324c 94.4%);"
-        // bg="black"
         color="white"
+        itemID="nav-menu"
       >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Abhishek Yadav" display="flex" alignItems="center">
@@ -41,13 +41,9 @@ const Navbar = () => {
             {navItem.map((item, i) => {
               return (
                 <Link
-                  as={ReachLink}
-                  key={item.path}
                   activeClass={"active"}
-                  to={item.path}
                   spy={true}
                   smooth={true}
-                  offset={item.path === "skills" ? -180 : -60}
                   duration={700}
                   fontSize="18"
                   _hover={{ color: "#0078ff" }}

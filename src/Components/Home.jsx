@@ -6,6 +6,7 @@ import profilePic from "../assets/profile pic.jpg";
 const Home = () => {
   return (
     <Flex
+      itemID="home"
       flexDirection={{ base: "column", md: "row" }}
       alignItems="center"
       justifyContent="flex-end"

@@ -1,13 +1,13 @@
 import { Heading, HStack, Image, VStack } from "@chakra-ui/react";
 import React from "react";
- import {skillsdata} from "./skilldata.js"
-
+import { skillsdata } from "./skilldata.js";
 
 const Skills = () => {
-  console.log(skillsdata)
+  console.log(skillsdata);
   let skills = skillsdata.map((item) => {
     return (
       <VStack
+        itemID="skills"
         key={item.name}
         shadow={"md"}
         py="6"

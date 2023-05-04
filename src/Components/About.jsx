@@ -7,6 +7,8 @@ const About = () => {
   return (
     // <Container maxW={"900px"} height={"80vh"}>
     <VStack
+      itemID="about"
+      className="about section"
       spacing="5"
       maxW={"1000px"}
       m="auto"
