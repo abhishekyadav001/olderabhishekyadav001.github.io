@@ -3,7 +3,6 @@ import React from "react";
 import { skillsdata } from "./skilldata.js";
 
 const Skills = () => {
-  console.log(skillsdata);
   let skills = skillsdata.map((item) => {
     return (
       <VStack
