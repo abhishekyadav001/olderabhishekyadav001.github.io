@@ -15,7 +15,6 @@ const navItem = [
   { path: "contact", name: "Contact" },
 ];
 
-// const secondryColor = "#2442d7";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
