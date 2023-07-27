@@ -15,7 +15,6 @@ const navItem = [
   { path: "contact", name: "Contact" },
 ];
 
-
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -42,8 +41,10 @@ const Navbar = () => {
                 <Link
                   activeClass={"active"}
                   spy={true}
+                  as={ReachLink}
                   smooth={true}
                   duration={700}
+                  to={item.path}
                   fontSize="18"
                   _hover={{ color: "#0078ff" }}
                 >
