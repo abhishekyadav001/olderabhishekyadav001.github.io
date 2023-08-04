@@ -5,7 +5,6 @@ import resume from "../assets/Abhishek_Yadav_Resume.pdf";
 
 const About = () => {
   return (
-    // <Container maxW={"900px"} height={"80vh"}>
     <VStack
       itemID="about"
       className="about section"
@@ -36,7 +35,7 @@ const About = () => {
         </Text>
       </Flex>
     </VStack>
-    // </Container>
+   
   );
 };
 

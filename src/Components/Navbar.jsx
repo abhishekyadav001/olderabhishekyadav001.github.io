@@ -87,7 +87,6 @@ const Navbar = () => {
               rounded="sm"
               shadow="sm"
               bgGradient="radial-gradient(circle at 27.1% 51.8%, #0c3542 0.5%, #28324c 94.4%);"
-              // bg="black"
               color="white"
             >
               {navItem.map((item) => {
