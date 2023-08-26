@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6d75c23f.css",
-    "main.js": "/static/js/main.bc38e540.js",
+    "main.js": "/static/js/main.40f65c7a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/profile pic.jpg": "/static/media/profile pic.59a394e4ed31cb72bdf0.jpg",
     "static/media/Home.png": "/static/media/Home.442ad81352aac4152678.png",
     "static/media/Login.png": "/static/media/Login.0864a704795ea0f232a3.png",
     "static/media/Home3.png": "/static/media/Home3.a074b0e6b77ab7f29360.png",
@@ -17,6 +16,7 @@
     "static/media/Footer.png": "/static/media/Footer.6bc1271d710fa6eeff1e.png",
     "static/media/Product.png": "/static/media/Product.008c9b4897863644a394.png",
     "static/media/Abhishek_Yadav_Resume.pdf": "/static/media/Abhishek_Yadav_Resume.515ac4952389361647c1.pdf",
+    "static/media/profile pic.jpg": "/static/media/profile pic.020c5e2a667c25823eb5.jpg",
     "static/media/main.png": "/static/media/main.024e821a97e001b6993d.png",
     "static/media/Product1.png": "/static/media/Product1.921f1c739924727f76b0.png",
     "static/media/Product2.png": "/static/media/Product2.084ceb8b5c12f403f549.png",
@@ -36,11 +36,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.6d75c23f.css.map": "/static/css/main.6d75c23f.css.map",
-    "main.bc38e540.js.map": "/static/js/main.bc38e540.js.map",
+    "main.40f65c7a.js.map": "/static/js/main.40f65c7a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d75c23f.css",
-    "static/js/main.bc38e540.js"
+    "static/js/main.40f65c7a.js"
   ]
 }
