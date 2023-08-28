@@ -64,7 +64,7 @@ const projectsData = [
     title: "FAB-BAGS",
     description: "FEB BAGS is a major Indian cosmetics Product E-commerce Company.",
     techStack: ["ReactJs", "HTML", "JavaScript", "CSS", "Chakra UI"],
-    deployedURL: "https://63397c51a7b24e4f3a196bb0--fabsbags.netlify.app/",
+    deployedURL: "https://geekbuyingsclone.netlify.app/",
     githubURL: "https://github.com/abhishekyadav001/knowledgeable-breath-5856/tree/main/knowledge-breath",
     images: [topoffab, mainoffab, bottomoffab, wishlist],
   },

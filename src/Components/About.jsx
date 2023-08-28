@@ -35,7 +35,6 @@ const About = () => {
         </Text>
       </Flex>
     </VStack>
-   
   );
 };
 
