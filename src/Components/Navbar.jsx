@@ -46,6 +46,7 @@ const Navbar = () => {
                   duration={700}
                   to={item.path}
                   fontSize="18"
+                  offset={item.path === "skills" ? -180 : -60}
                   _hover={{ color: "#0078ff" }}
                 >
                   {item.name}
