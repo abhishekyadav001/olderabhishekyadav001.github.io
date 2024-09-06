@@ -9,10 +9,10 @@ const Skills = () => {
         itemID="skills"
         key={item.name}
         shadow={"md"}
-        py="6"
-        px="3"
-        width="120px"
-        height={"120px"}
+        py="4"
+        px="2"
+        width="100px"
+        height={"100px"}
         justifyContent="flex-end"
         boxShadow="0px 5px 10px 0px rgba(0, 0, 0, 0.5)"
         rounded={"lg"}
@@ -24,8 +24,8 @@ const Skills = () => {
         color="black"
         id="skills"
       >
-        <Image src={item.icon} size={"xl"} height="80%" />
-        <Heading size={"sm"}>{item.name}</Heading>
+        <Image src={item.icon} size={"l"} height="50%" />
+        <Heading size={"xs"}>{item.name}</Heading>
       </VStack>
     );
   });
@@ -39,7 +39,7 @@ const Skills = () => {
       color="white"
     >
       <Heading my={6}>My Tools & Skills </Heading>
-      <HStack flexWrap={"wrap"} gap="3" maxW={"850px"} justifyContent="center">
+      <HStack flexWrap={"wrap"} gap="3" maxW={"800px"} justifyContent="center">
         {skills}
       </HStack>
     </VStack>

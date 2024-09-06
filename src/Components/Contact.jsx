@@ -54,7 +54,7 @@ const Contact = () => {
           </Tooltip>
         </HStack>
         <Box rounded={"lg"} boxShadow={"lg"} p={6} maxWidth="450px" width={"100%"}>
-          <form action="https://formsubmit.co/a46a1cceff413118facedecaed5e9466" method="POST">
+          <form action="https://formsubmit.co/315d7a943c8ac769462e5018800e4028" method="POST">
             <Stack spacing={4}>
               <InputGroup>
                 <InputLeftElement children={<FaUserTie color="#525252" />} />
